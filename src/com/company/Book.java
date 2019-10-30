@@ -23,6 +23,16 @@ public class Book {
         System.out.println("Author: " + this.author);
         System.out.println("Description: " + this.description);
     }
+    public double total(int n){
+        if(isInStock)
+        {
+            return this.price*n;
+        }
+        else{
+            System.out.println("This book is not in stock.");
+            return 0;
+        }
+    }
 
     public String getTitle() {
         return title;
